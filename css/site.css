@@ -1,20 +1,16 @@
-:root {
-    --cf-dark: #212121;
-    --cf-light: #ebebeb;
-    --cf-darkblue: #00223d;
-    --cf-highlight: #fae100;
-}
-
 
 html,
 body {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
+    
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
+   
+    background-color: var(--cf-darkblue);
     background-position: top right;
     background-repeat: no-repeat;
 }
