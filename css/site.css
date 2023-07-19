@@ -12,12 +12,18 @@
     color: var(--cf-light);
 }
 
-.rocketLogo {
-   min-width: 3rem;
+.nav-item {
+    color: var(--cf-light);
+}
+
+.nav-item a:hover {
+    color: var(--cf-light) !important;
 }
 
 .btn {
+    color: var(--cf-dark);
     background-color: var(--cf-highlight);
+    border-color: var(--cf-highlight)
 }
 
 html,
@@ -32,9 +38,9 @@ body {
     flex-direction: column;
     background-image: url("/img/LandingPage_576.png");
     background-color: var(--cf-darkblue);
-    background-position: top;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     
 }
 
@@ -46,6 +52,13 @@ body {
     flex-shrink: 0;
 }
 
+#action-text {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
 .mainTitle,
 .subTitle {
     color: var(--cf-light);
@@ -53,33 +66,37 @@ body {
 
 .mainTitle {
     font-family: var(--cf-heading-font);
-    font-size: 3.4rem;
-    line-height: 3.1rem;
+    font-size: 2.6rem;
+    line-height: 2rem;
     /* letter-spacing: 0.08rem; */
 }
 
 .subTitle {
     font-family: var(--cf-subtitle-font);
-    font-size: 1.38rem;
-    line-height: 1.38rem;
-    font-weight: 300;
-    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 200;
 }
 
  /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) {
     body {
         background-image: url(/img/LandingPage_768.png);
+        background-position: top right;
     } 
     .mainTitle {        
-        font-size: 2.5rem;
-        line-height: 2rem;
+        font-size: 3.4rem;
+        line-height: 3rem;
     }
     
     .subTitle {        
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1rem;
-        font-weight: 300;
+        font-weight: 200;
+    }
+
+    #action-text {
+        padding-bottom: 3rem;
     }
 }
 
@@ -88,15 +105,10 @@ body {
     body {
         background-image: url(/img/LandingPage_992.png);
     } 
-    .mainTitle {        
-        font-size: 3.4rem;
-        line-height: 3.1rem;       
-    }
-    
-    .subTitle {        
-        font-size: 1.38rem;
-        line-height: 1.38rem;
-        font-weight: 400;
+    #action-text {
+        padding-bottom: 0;
+        justify-content: start;
+        align-items: center;
     }
 }
 
@@ -104,16 +116,6 @@ body {
 @media (min-width: 992px) {
     body {
         background-image: url(/img/LandingPage_1200.png);
-    }
-    .mainTitle {        
-        font-size: 3.8rem;
-        line-height: 3.4rem;       
-    }
-    
-    .subTitle {        
-        font-size: 1.55rem;
-        line-height: 1.8rem;
-        font-weight: 500;
     }
 }
 
@@ -123,15 +125,8 @@ body {
         background-image: url(/img/LandingPage_1400.png);
     }
 
-    .mainTitle {        
-        font-size: 4.7rem;
-        line-height: 4.1rem;
-    }
-    
-    .subTitle {        
-        font-size: 1.9rem;
-        line-height: 1.9rem;
-        font-weight: 700;
+    #action-text {
+        padding-left: 3rem;
     }
 }
 
@@ -139,5 +134,17 @@ body {
 @media (min-width: 1400px) {
     body {
         background-image: url(/img/LandingPage_1920.png);
+        background-size: cover;
+    }
+
+        .mainTitle {        
+        font-size: 4.7rem;
+        line-height: 4.1rem;
+    }
+    
+    .subTitle {        
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+        font-weight: 400;
     }
 }
