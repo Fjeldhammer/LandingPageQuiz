@@ -1,18 +1,41 @@
+:root {
+    --cf-dark: #212121;
+    --cf-light: #ebebeb;
+    --cf-darkblue: #00223d;
+    --cf-highlight: #fae100;
+    --cf-body-font: 'Roboto', sans-serif;
+    --cf-heading-font: 'Racing Sans One', cursive;
+    --cf-subtitle-font: 'Fira Sans', sans-serif;
+}
+
+.navbar {
+    color: var(--cf-light);
+}
+
+.rocketLogo {
+   min-width: 3rem;
+}
+
+.btn {
+    background-color: var(--cf-highlight);
+}
 
 html,
 body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--cf-body-font);
 }
 
 body {
     
     display: flex;
     flex-direction: column;
-   
+    background-image: url("/img/LandingPage_576.png");
     background-color: var(--cf-darkblue);
-    background-position: top right;
+    background-position: top;
     background-repeat: no-repeat;
+    background-size: auto;
+    
 }
 
 .content {
@@ -21,4 +44,100 @@ body {
 
 .footer {
     flex-shrink: 0;
+}
+
+.mainTitle,
+.subTitle {
+    color: var(--cf-light);
+}
+
+.mainTitle {
+    font-family: var(--cf-heading-font);
+    font-size: 3.4rem;
+    line-height: 3.1rem;
+    /* letter-spacing: 0.08rem; */
+}
+
+.subTitle {
+    font-family: var(--cf-subtitle-font);
+    font-size: 1.38rem;
+    line-height: 1.38rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {
+    body {
+        background-image: url(/img/LandingPage_768.png);
+    } 
+    .mainTitle {        
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+    
+    .subTitle {        
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: 300;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-image: url(/img/LandingPage_992.png);
+    } 
+    .mainTitle {        
+        font-size: 3.4rem;
+        line-height: 3.1rem;       
+    }
+    
+    .subTitle {        
+        font-size: 1.38rem;
+        line-height: 1.38rem;
+        font-weight: 400;
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url(/img/LandingPage_1200.png);
+    }
+    .mainTitle {        
+        font-size: 3.8rem;
+        line-height: 3.4rem;       
+    }
+    
+    .subTitle {        
+        font-size: 1.55rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+    }
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(/img/LandingPage_1400.png);
+    }
+
+    .mainTitle {        
+        font-size: 4.7rem;
+        line-height: 4.1rem;
+    }
+    
+    .subTitle {        
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+        font-weight: 700;
+    }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(/img/LandingPage_1920.png);
+    }
 }
