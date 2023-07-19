@@ -34,7 +34,7 @@ body {
     background-color: var(--cf-darkblue);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     
 }
 
