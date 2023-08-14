@@ -36,7 +36,7 @@ body {
     
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_576.png");
+    background-image: url("/LandingPageQuiz/img/LandingPage_576.png");
     background-color: var(--cf-darkblue);
     background-position: top center;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ body {
  /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) {
     body {
-        background-image: url(/img/LandingPage_768.png);
+        background-image: url(/LandingPageQuiz/img/LandingPage_768.png);
         background-position: top right;
     } 
     .mainTitle {        
@@ -103,7 +103,7 @@ body {
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
-        background-image: url(/img/LandingPage_992.png);
+        background-image: url(/LandingPageQuiz/img/LandingPage_992.png);
     } 
     #action-text {
         padding-bottom: 0;
@@ -115,14 +115,14 @@ body {
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {
-        background-image: url(/img/LandingPage_1200.png);
+        background-image: url(/LandingPageQuiz/img/LandingPage_1200.png);
     }
 }
 
  /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     body {
-        background-image: url(/img/LandingPage_1400.png);
+        background-image: url(/LandingPageQuiz/img/LandingPage_1400.png);
     }
 
     #action-text {
@@ -133,7 +133,7 @@ body {
  /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     body {
-        background-image: url(/img/LandingPage_1920.png);
+        background-image: url(/LandingPageQuiz/img/LandingPage_1920.png);
         background-size: cover;
     }
 
